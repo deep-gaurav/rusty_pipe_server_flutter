@@ -1,0 +1,14 @@
+[package]
+name = "rustypipe_server_sync"
+version = "0.1.0"
+authors = ["Deep Gaurav <deepgauravraj@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "rustypipe_server_sync"
+crate-type = ["staticlib", "cdylib"]
+
+[dependencies]
+rusty_pipe_server = {git = "https://github.com/deep-gaurav/rusty_pipe_server"}
+tokio = "0.2.22"
+openssl = { version = "0.10", features = ["vendored"] }
